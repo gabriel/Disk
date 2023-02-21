@@ -18,8 +18,6 @@
 		10F3C6F21F23D984006D42EF /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F3C6E41F23D984006D42EF /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10F3C6FC1F23D994006D42EF /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C6FB1F23D994006D42EF /* Disk.swift */; };
 		10F3C6FE1F23D9A4006D42EF /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C6FD1F23D9A4006D42EF /* Disk+Codable.swift */; };
-		10F3C7001F23D9B1006D42EF /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C6FF1F23D9B1006D42EF /* Disk+UIImage.swift */; };
-		10F3C7021F23D9C1006D42EF /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7011F23D9C1006D42EF /* Disk+[UIImage].swift */; };
 		10F3C7041F23D9C9006D42EF /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7031F23D9C9006D42EF /* Disk+Data.swift */; };
 		10F3C7061F23D9E0006D42EF /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */; };
 		10F3C7081F23DAF2006D42EF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7071F23DAF2006D42EF /* Message.swift */; };
@@ -50,8 +48,6 @@
 		10F3C6F11F23D984006D42EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10F3C6FB1F23D994006D42EF /* Disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disk.swift; sourceTree = "<group>"; };
 		10F3C6FD1F23D9A4006D42EF /* Disk+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+Codable.swift"; sourceTree = "<group>"; };
-		10F3C6FF1F23D9B1006D42EF /* Disk+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+UIImage.swift"; sourceTree = "<group>"; };
-		10F3C7011F23D9C1006D42EF /* Disk+[UIImage].swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+[UIImage].swift"; sourceTree = "<group>"; };
 		10F3C7031F23D9C9006D42EF /* Disk+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+Data.swift"; sourceTree = "<group>"; };
 		10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+[Data].swift"; sourceTree = "<group>"; };
 		10F3C7071F23DAF2006D42EF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -105,8 +101,6 @@
 				104611771F27B27E00BBDB3A /* Disk+Errors.swift */,
 				109256591F247F7700B3C32A /* Disk+Helpers.swift */,
 				10F3C6FD1F23D9A4006D42EF /* Disk+Codable.swift */,
-				10F3C6FF1F23D9B1006D42EF /* Disk+UIImage.swift */,
-				10F3C7011F23D9C1006D42EF /* Disk+[UIImage].swift */,
 				10F3C7031F23D9C9006D42EF /* Disk+Data.swift */,
 				10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */,
 			);
@@ -242,10 +236,8 @@
 				10F3C6FE1F23D9A4006D42EF /* Disk+Codable.swift in Sources */,
 				1092565A1F247F7700B3C32A /* Disk+Helpers.swift in Sources */,
 				10F3C7061F23D9E0006D42EF /* Disk+[Data].swift in Sources */,
-				10F3C7021F23D9C1006D42EF /* Disk+[UIImage].swift in Sources */,
 				10F3C7041F23D9C9006D42EF /* Disk+Data.swift in Sources */,
 				103FA3791F713340004C600F /* Disk+VolumeInformation.swift in Sources */,
-				10F3C7001F23D9B1006D42EF /* Disk+UIImage.swift in Sources */,
 				104611781F27B27E00BBDB3A /* Disk+Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +400,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,6 +427,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
